@@ -1,3 +1,5 @@
 loans/*
 rate_HPI_process/*
 cloglog/*
+.venv
+venv
