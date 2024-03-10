@@ -3,3 +3,4 @@ rate_HPI_process/*
 cloglog/*
 .venv
 venv
+simulation.log
