@@ -76,8 +76,8 @@ def simulate_loan_defaults(n, data, rate15y_path, rate30y_path, dt_params, pp_pa
     
     # Iterate through each loan
     for j in range(n):
-        pid = os.getpid()
-        logger.info(f'[{pid}] Processing loan {j} of {range(n)}')
+        #pid = os.getpid()
+        #logger.info(f'[{pid}] Processing loan {j} of {range(n)}')
         # Calculate unchanged part of the model for each loan
         Dflt_Xb_unchanged = compute_cheng(dt_coef_param,data.iloc[j + start])
         PP_Xb_unchanged = compute_cheng(pp_coef_param,data.iloc[j + start])
@@ -177,7 +177,7 @@ def main_simulation():
         rate15y_path = rate15y_path.iloc[:, :80]
         rate30y_path = rate30y_path.iloc[:, :80]
         hpa_path = hpa_path.iloc[:, :80]
-        loans = loans.iloc[:100,:]
+        #loans = loans.iloc[:100,:]
 
         original_rate = loans['orig_interest_rate'].tolist()
 
