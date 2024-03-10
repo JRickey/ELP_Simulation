@@ -178,7 +178,6 @@ def main_simulation():
         rate30y_path = rate30y_path.iloc[:, :80]
         hpa_path = hpa_path.iloc[:, :80]
         #loans = loans.iloc[:100,:]
-
         original_rate = loans['orig_interest_rate'].tolist()
 
         loans = pd.merge(loans, df_msa[['MSA', 'metro_name']], on='MSA', how='left')
