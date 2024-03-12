@@ -7,4 +7,4 @@ msa_data/*
 venv
 simulation.log
 results/*
-
+.DS_TORE
