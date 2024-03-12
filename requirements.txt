@@ -1,0 +1,7 @@
+numpy
+pandas
+seaborn
+tqdm
+matplotlib
+dask[complete]
+dask-expr
